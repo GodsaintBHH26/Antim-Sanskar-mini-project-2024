@@ -1,6 +1,6 @@
 function Home(){
     return(
-        <h1 className="text-black">Home page</h1>
+        <h1 className="text-black z-10">Home page</h1>
     )
 }
 
