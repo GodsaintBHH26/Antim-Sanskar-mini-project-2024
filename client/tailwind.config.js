@@ -6,6 +6,7 @@ export default {
       spacing: {
         '256': "64rem",
         '128':"32rem",
+        '176': "44rem",
       },
     },
   },

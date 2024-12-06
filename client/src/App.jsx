@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar";
-import Home from "./components/home";
-import About from "./components/about";
-import Shop from "./components/shop"
+import Home from "./pages/home";
+import About from "./pages/about";
+import Shop from "./pages/shop"
 
 function App() {
   return (
     <div>
-      <div className="bg-green-400 w-full top-0 absolute h-256 z-0">
+      <div className="bg-green-400 w-full top-0 absolute z-0">
         <NavBar />
         <div className="mt-5">
           <Routes>
