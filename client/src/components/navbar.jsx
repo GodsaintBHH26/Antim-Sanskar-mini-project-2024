@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
+import { Button, AppBar, Typography, Toolbar} from "@mui/material"
 
 function NavBar() {
   return (
-    <div className="fixed top-0 left-0 bg-transparent flex w-screen justify-between items-center">
-      <Link to="/">
-        <img src="./logo.svg" alt="logo" className="h-28 scale-105" />
-      </Link>
-      <div className="flex gap-5 mr-20">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link>Contact Us</Link>
-        <Link to="/shop">Shop</Link>
-        <Link>Transport</Link>
-      </div>
-    </div>
+    <>
+      <AppBar className="!bg-transparent !shadow-none !h-16">
+        <Toolbar className="flex justify-between">
+          <Typography><Link to="/"><img src="/logo.svg" alt="logo-img" className="h-16 drop-shadow-sm" /></Link></Typography>
+          <div className="flex gap-2 ">
+            <Button variant="contained" to='/about' component={Link} className="!bg-transparent !shadow-none !font-bold hover:!bg-[#ffff] !text-lg !text-blue-700">About Us</Button>
+            <Button variant="contained" className="!bg-transparent !shadow-none !font-bold hover:!bg-[#ffff] !text-lg !text-blue-700">Cremation Centers</Button>
+            <Button variant="contained" className="!bg-transparent !shadow-none !font-bold hover:!bg-[#ffff] !text-lg !text-blue-700">Rituals/Traditions</Button>
+            <Button variant="contained" className="!bg-transparent !shadow-none !font-bold hover:!bg-[#ffff] !text-lg !text-blue-700">Facilities</Button>
+            <Button variant="contained" to="/shop" component={Link} className="!bg-transparent !shadow-none !font-bold hover:!bg-[#ffff] !text-lg !text-blue-700">Shop</Button>
+          </div>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 }
 
