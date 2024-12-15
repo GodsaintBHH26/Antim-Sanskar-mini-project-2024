@@ -9,6 +9,13 @@ export default {
         '176': "44rem",
         '84.5': "21.59rem"
       },
+      fontFamily:{
+        josefin :['"Josefin Sans"', 'sans-serif'],
+      },
+      backgroundColor:{
+        whiteSee:'rgb(255, 255, 255, 0.3)',
+        yelSee: 'rgb(255, 255, 0, 0.5)'
+      }
     },
   },
   plugins: [],
