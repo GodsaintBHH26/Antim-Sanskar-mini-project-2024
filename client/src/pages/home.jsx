@@ -1,5 +1,6 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "../home.css";
+import HomeContent from "./homecContent";
 
 function Home() {
   return (
@@ -22,8 +23,7 @@ function Home() {
             <p className="text-black font-semibold text-lg">
               Even in grief, you're not alone.
             </p>
-          </div>
-          {" "}
+          </div>{" "}
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.8}>
           {" "}
@@ -34,7 +34,10 @@ function Home() {
           <div className="w-full h-full" id="pandits"></div>{" "}
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.5}>
-          <div className="bg-gradient-to-r from-[#a6aed2] to-[#a2aace] w-full h-full bg-cover -mt-84.5"></div>
+          <div className="bg-gradient-to-r from-[#a6aed2] to-[#a2aace] w-full h-full bg-cover -mt-84.5">
+            <h1 className="font-josefin pt-20 font-bold pl-5 underline hover:text-green-700">About this page</h1>
+            <HomeContent />
+          </div>
         </ParallaxLayer>
       </Parallax>
     </>
