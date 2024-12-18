@@ -35,7 +35,7 @@ function Home() {
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.5}>
           <div className="bg-gradient-to-r from-[#a6aed2] to-[#a2aace] w-full h-full bg-cover -mt-84.5">
-            <h1 className="font-josefin pt-20 font-bold pl-5 underline hover:text-green-700">About this page</h1>
+            <h1 className="font-josefin pt-20 font-extrabold pl-5 underline">Why Us?</h1>
             <HomeContent />
           </div>
         </ParallaxLayer>

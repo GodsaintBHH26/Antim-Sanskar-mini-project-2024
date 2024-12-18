@@ -1,4 +1,5 @@
 import Card from "../components/card";
+import FootContact from "../components/footer";
 
 function HomeContent(){
 
@@ -15,8 +16,8 @@ function HomeContent(){
             <Card cardImage={cardImages.tulsi} cardHeading={'Rituals'} cardText={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, veritatis!'}/>
             <Card cardImage={cardImages.homa} cardHeading={'Pandits'} cardText={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, labore.'}/>
             <Card cardImage={cardImages.cremation} cardHeading={'Funerals & Cremation centers'} cardText={'Lorem ipsum dolor, sit amet consectetur adipisicing elit.'}/>
-            
         </div>
+        <FootContact/>
         </>
     )
 }

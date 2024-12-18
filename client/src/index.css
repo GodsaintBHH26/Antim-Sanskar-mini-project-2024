@@ -100,6 +100,13 @@ button:focus-visible {
   font-style: normal;
 }
 
+.josefin-sans-extrabold {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
 .josefin-sans-regular {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
