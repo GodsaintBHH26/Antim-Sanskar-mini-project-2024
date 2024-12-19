@@ -20,25 +20,25 @@ function NavBar() {
               variant="contained"
               to="/about"
               component={Link}
-              className="!bg-transparent !shadow-none  !font-bold hover:!bg-yelSee !text-lg !text-blue-700"
+              className="!bg-transparent !shadow-none  !font-bold hover:!bg-yelSee !text-lg !text-[#e18033] "
             >
               About Us
             </Button>
             <Button
               variant="contained"
-              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-blue-700"
+              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
             >
               Cremation Centers
             </Button>
             <Button
               variant="contained"
-              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-blue-700"
+              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
             >
               Rituals/Traditions
             </Button>
             <Button
               variant="contained"
-              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-blue-700"
+              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
             >
               Facilities
             </Button>
@@ -46,7 +46,7 @@ function NavBar() {
               variant="contained"
               to="/shop"
               component={Link}
-              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-blue-700"
+              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
             >
               Shop
             </Button>
