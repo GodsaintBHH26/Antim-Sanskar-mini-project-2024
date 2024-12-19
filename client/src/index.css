@@ -72,6 +72,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+input:-webkit-autofill{
+background-color: white;
+}
+
 #waterfall{
   background-image: url(/hero_parallax/waterfall-bg.jpg);
   background-repeat: no-repeat;
