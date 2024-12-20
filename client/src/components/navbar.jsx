@@ -1,7 +1,26 @@
 import { Link } from "react-router-dom";
-import { Button, AppBar, Typography, Toolbar } from "@mui/material";
+import {
+  Button,
+  AppBar,
+  Typography,
+  Toolbar,
+  Menu,
+  MenuItem,
+} from "@mui/material";
+import { useState } from "react";
 
 function NavBar() {
+  const [anchor, setAnchor] = useState(null);
+  const open = Boolean(anchor);
+
+  const handleClick = (event) => {
+    setAnchor(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchor(null);
+  };
+
   return (
     <>
       <AppBar className="!bg-transparent !shadow-none !h-16">
@@ -36,12 +55,54 @@ function NavBar() {
             >
               Rituals/Traditions
             </Button>
+
+            {/* Adding the dropdown menu for the facilites that involves - Transportations, Pandits, Catering */}
+            {/* The button */}
             <Button
               variant="contained"
-              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
+              onClick={handleClick}
+              className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033] focus:!outline-none"
             >
               Facilities
             </Button>
+            {/* The menu */}
+            <Menu anchorEl={anchor} open={open} onClose={handleClose} classes={{paper: "!bg-gradient-to-br !from-[#a6c7d5] !to-[#82effb]",}}>
+
+              <MenuItem onClick={handleClose} >
+                <Button
+                  variant="contained"
+                  to=''
+                  component = {Link}
+                  className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
+                >
+                  Transportation
+                </Button>
+              </MenuItem>
+
+              <MenuItem onClick={handleClose}>
+                <Button
+                  variant="contained"
+                  to=''
+                  component = {Link}
+                  className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
+                >
+                  Pandits
+                </Button>
+              </MenuItem>
+
+              <MenuItem onClick={handleClose}>
+                <Button
+                  variant="contained"
+                  to=''
+                  component = {Link}
+                  className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
+                >
+                  Catering
+                </Button>
+              </MenuItem>
+
+            </Menu>
+
             <Button
               variant="contained"
               to="/shop"
