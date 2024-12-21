@@ -1,6 +1,6 @@
 function Shop() {
   return (
-    <div className="bg-red-900 w-full h-full">
+    <div className="bg-gradient-to-r from-[#a8dcff] to-[#c4c2c2] w-screen h-screen flex justify-center items-center">
       <h1>This is shop</h1>
     </div>
   );

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Login() {
   return (
     <>
-      <div className="bg-gradient-to-r from-[#c3ceff] to-[#455a8c] w-screen h-screen">
+      <div className="bg-gradient-to-r from-[#a8dcff] to-[#c4c2c2] w-screen h-screen">
         <div className=" flex justify-center items-center h-screen">
           <div className="bg-gradient-to-l from-[#c3ceff] to-[#154445] h-128 w-116 rounded-md items-center shadow-lg text-xl flex flex-col gap-5">
             <form action="">

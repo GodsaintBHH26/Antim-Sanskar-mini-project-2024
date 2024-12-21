@@ -6,6 +6,7 @@ import Shop from "./pages/shop";
 import Login from "./pages/login";
 import Rituals from "./pages/rituals";
 import SignUp from "./pages/signup";
+import Cremation from "./pages/cremation";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path='/rituals' element={<Rituals/>} />
           <Route path="/signup" element={<SignUp/>} />
+          <Route path="/cremation" element={<Cremation/>} />
         </Routes>
       </BrowserRouter>
     </>

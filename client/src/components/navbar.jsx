@@ -45,12 +45,16 @@ function NavBar() {
             </Button>
             <Button
               variant="contained"
+              component={Link}
+              to='/cremation'
               className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
             >
               Cremation Centers
             </Button>
             <Button
               variant="contained"
+              component={Link}
+              to='/rituals'
               className="!bg-transparent !shadow-none !font-bold hover:!bg-yelSee !text-lg !text-[#e18033]"
             >
               Rituals/Traditions
